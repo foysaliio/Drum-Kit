@@ -61,3 +61,10 @@ drums.forEach(drum => {
     buttonAnimation(key);
   });
 });
+
+document.addEventListener('keydown', event => {
+  const key = event.key.toLowerCase();
+
+  playSound(key);
+  buttonAnimation(key);
+});
