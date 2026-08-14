@@ -1,5 +1,7 @@
 'use strict';
 
+const drums = document.querySelectorAll('.drum');
+
 function playSound(key) {
   let audio;
 
@@ -38,3 +40,24 @@ function playSound(key) {
 
   audio.play();
 }
+
+function buttonAnimation(key) {
+  const activeButton = document.querySelector(`.${key}`);
+
+  if (!activeButton) return;
+
+  activeButton.classList.add('pressed');
+
+  setTimeout(() => {
+    activeButton.classList.remove('pressed');
+  }, 100);
+}
+
+drums.forEach(drum => {
+  drum.addEventListener('click', () => {
+    const key = drum.innerHTML.toLowerCase();
+
+    playSound(key);
+    buttonAnimation(key);
+  });
+});
