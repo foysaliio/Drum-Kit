@@ -8,6 +8,14 @@ Drum Kit is an interactive web project where users can play different drum sound
 
 The project uses JavaScript DOM manipulation, event handling, keyboard events, and audio playback to create an interactive drumming experience.
 
+## Live Demo
+
+[View Live Demo](https://foysaliio.github.io/Drum-Kit/)
+
+## Screenshot
+
+![Drum Kit](./images/foysaliio.github.io_Drum-Kit_.png)
+
 ## Features
 
 • Play drum sounds by clicking buttons
